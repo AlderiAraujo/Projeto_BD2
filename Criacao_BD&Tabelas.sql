@@ -29,12 +29,14 @@ CREATE TABLE IF NOT EXISTS `Projeto1_BD2`.`Assinatura` (
   `Senha` VARCHAR(10) NOT NULL,
   `CPF_Usuario` VARCHAR(11) NOT NULL,
   `Tipo_Plano` VARCHAR(10) NOT NULL,
+  `Data_Pagamento` DATE NOT NULL,
+  `Tipo_Pagamento` VARCHAR(10) NOT NULL,
   PRIMARY KEY (`Id_Usuario`),
   FOREIGN KEY (`CPF_Usuario`) REFERENCES `Projeto1_BD2`.`Usuario` (`CPF`),
   FOREIGN KEY (`Tipo_Plano`) REFERENCES `Projeto1_BD2`.`Planos` (`Nome_Plano`));
   
 CREATE TABLE IF NOT EXISTS `Projeto1_BD2`.`Perfil` (
-  `Id_Perfil` INT NOT NULL,
+  `Id_Perfil` INT NOT NULL AUTO_INCREMENT,
   `Nome` VARCHAR(15) NOT NULL,
   `Usuario` VARCHAR(20) NOT NULL,
   `Controle_Pais` TINYINT NOT NULL,
