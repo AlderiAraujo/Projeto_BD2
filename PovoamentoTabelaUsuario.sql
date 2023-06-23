@@ -1,4 +1,5 @@
-INSERT INTO `Usuario` (`CPF`, `Nome`, `Telefone`, `E-mail`, `Data_Nascimento`) VALUES 
+INSERT INTO `Usuario` (`CPF`, `Nome`, `Telefone`, `E-mail`, `Data_Nascimento`) 
+VALUES 
 	('00163103280', 'Lewis Simpson', '91589662132', 'morbi.vehicula@aol.net', '1997-12-25'),
 	('04741556726', 'Alexander Sims', '24688236827', 'feugiat.lorem@icloud.net', '1978-02-02'),
 	('08104676386', 'Nita Duncan', '61959640532', 'convallis.convallis@outlook.ca', '1972-03-11'),

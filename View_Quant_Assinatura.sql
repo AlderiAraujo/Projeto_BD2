@@ -3,10 +3,10 @@ create view `Quant_Assinatura` as
 		`Tipo_plano` as `Tipo_Plano`,
 		count(`Id_Usuario`) as `Quant_Assinatura`
 	from
-		assinatura
+		Assinatura a
 	inner join
-		planos p
-	on assinatura.Tipo_Plano = p.Nome_Plano
+		Planos p
+	on a.Tipo_Plano = p.Nome_Plano
 	group by p.Nome_Plano;
 
 select * from `Quant_Assinatura` where `Tipo_Plano` = 'Supremo';

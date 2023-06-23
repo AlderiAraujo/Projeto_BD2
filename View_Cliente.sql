@@ -3,9 +3,9 @@ create view `Cliente` as
 		`Nome` as `Cliente`,
         `Tipo_plano` as `Tipo_Plano`
 	from
-		usuario u
+		Usuario u
 	inner join
-		assinatura a
+		Assinatura a
 	on u.CPF = a.CPF_Usuario
 	order by a.Tipo_Plano;
     

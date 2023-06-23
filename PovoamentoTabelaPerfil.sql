@@ -1,4 +1,4 @@
-insert into `perfil`(`Nome`, `Usuario`, `Controle_Pais`) values
+insert into `Perfil`(`Nome`, `Usuario`, `Controle_Pais`) values
 ('Alex01', 'Alexander_Sims', 0),
 ('Alex02', 'Alexander_Sims', 0),
 ('Alex03', 'Alexander_Sims', 0),
