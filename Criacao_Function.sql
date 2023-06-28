@@ -13,4 +13,20 @@ IF Plano != Tipo_Plano THEN
 END IF;
 RETURN (Quant_Perfil);
 END$$
+
+CREATE FUNCTION quant_assinaturas (Plano VARCHAR(10))
+RETURNS INT
+BEGIN
+DECLARE quant_assinatura int;
+IF Plano = 'Básico' THEN
+set (select * from `Quant_Assinatura` where `Tipo_Plano` = 'Básico');
+ELSEIF Plano = 'Padrão' THEN
+set (select * from `Quant_Assinatura` where `Tipo_Plano` = 'Padrão');
+ELSEIF Plano = 'Premium' THEN
+set (select * from `Quant_Assinatura` where `Tipo_Plano` = 'Premium');
+ELSEIF Plano = 'Supremo' THEN
+set (select * from `Quant_Assinatura` where `Tipo_Plano` = 'Supremo');
+END IF;
+RETURN (quant_assinaturas);
+END$$
 DELIMITER ;
